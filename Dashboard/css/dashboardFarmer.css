@@ -1,5 +1,12 @@
+*{
+    outline:hidden;
+}
+
 body{
     font-family: 'Exo 2', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+    padding-bottom: 0px !important;
 }
 
 .navbar-dark .navbar-brand {
@@ -14,6 +21,7 @@ body{
     border-right: solid 1px;
     border-color: lightgray;
     text-align: left;
+    height: 100vh
 }
 
 .nav-pills .nav-link.active, .nav-pills .show>.nav-link {
@@ -28,8 +36,23 @@ body{
         
 }
 .main{
-    margin-top:15px
+    margin-top:15px;
+    height: 100vh;
+    overflow-x:scroll;
+    scroll-behavior: smooth;
 }
+
+::-webkit-scrollbar {
+    width: 5px;  /* Remove scrollbar space */
+    background: rgba(0,67,105,0.4);
+}
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,67,105,0.8);
+    border-radius: 30px;
+
+}
+
 
 .placeholders{
     margin-top: 10px;
@@ -47,13 +70,6 @@ body{
     border-radius: 50%
 }
 
-footer{
-    color: lightgray;
-    text-align: center;   
-    font-size: 12px;  
-    width: 100%;
-    margin-top:23px
-}
 
 .TnC:hover{
     text-decoration: none
@@ -98,4 +114,19 @@ footer{
 
 i{
     margin-right: 8px
+}
+
+.inventoryButtons{
+    float:right
+}
+
+#addStockForm{
+    display: none;
+    margin-bottom: 80px;
+    background-color: lightgray;
+    padding:15px;
+}
+
+.formBtn{
+    text-align: center;
 }
