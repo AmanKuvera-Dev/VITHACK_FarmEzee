@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css">
+	<link rel="stylesheet" href="css/admin.css">
+	
+	<link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@500&display=swap" rel="stylesheet">
+
+	<title>Dashboard</title>
+
+	<!--  -->
+
+	<style>
+
+	</style>
+
+</head>
+
+<body>
+
+	
+    
+<!--    navbar starts here-->
+   
+   <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark">
+  <a class="navbar-brand" href="#">FarmEzee</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+
+    </ul>
+       
+    <ul class="navbar-nav">
+        
+        <li class="nav-item">
+        <a class="nav-link" href="#"> <i class="fas fa-sign-out-alt"></i> Logout</a>
+      </li>
+    </ul>
+        </div>
+
+</nav>
+    
+    
+<!--    Navbar ends here-->
+   
+   
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-3 col-md-2 sidebar">
+               
+               <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+                  <a class="nav-link active" id="v-pills-dash-tab" data-toggle="pill" href="#v-pills-dash" role="tab" aria-controls="v-pills-dash" aria-selected="true"><i class="fas fa-tachometer-alt"></i> Dashboard</a>
+                  <a class="nav-link" id="v-pills-orders-tab" data-toggle="pill" href="#v-pills-orders" role="tab" aria-controls="v-pills-orders" aria-selected="false"><i class="fas fa-shopping-cart"></i> Active Orders</a>
+                  <a class="nav-link" id="v-pills-stock-tab" data-toggle="pill" href="#v-pills-stock" role="tab" aria-controls="v-pills-stock" aria-selected="false"><i class="fas fa-warehouse"></i> Inventory & Stock</a>
+                  <a class="nav-link" id="v-pills-transport-tab" data-toggle="pill" href="#v-pills-transport" role="tab" aria-controls="v-pills-transport" aria-selected="false"><i class="fas fa-truck"></i> Transporters</a>
+                  <a class="nav-link" id="v-pills-transaction-tab" data-toggle="pill" href="#v-pills-transaction" role="tab" aria-controls="v-pills-transaction" aria-selected="false"><i class="fas fa-coins"></i> Transactions</a>
+                  <a class="nav-link" id="v-pills-stats-tab" data-toggle="pill" href="#v-pills-stats" role="tab" aria-controls="v-pills-stats" aria-selected="false"><i class="fas fa-chart-line"></i> Statistics</a>
+                  <a class="nav-link" id="v-pills-settings-tab" data-toggle="pill" href="#v-pills-settings" role="tab" aria-controls="v-pills-settings" aria-selected="false"><i class="fas fa-user-cog"></i> User Settings</a>
+                  <a class="nav-link" id="v-pills-help-tab" data-toggle="pill" href="#v-pills-help" role="tab" aria-controls="v-pills-help" aria-selected="false"><i class="fas fa-hands-helping"></i> Help</a>
+                  
+                </div>
+                
+                
+            </div>
+
+            
+            <div class="col-sm-9 col-md-10 main">
+               
+               <!--Dashboard Section starts here-->
+            <div class="sectionDash">
+                
+                <div class="dashboardBody">
+                    <h1 class="page-header"><i class="fas fa-tachometer-alt"></i>  Dashboard</h1> <hr>
+                    
+                </div>
+                
+                <div class="activeOrdersBody">
+                    <h1 class="page-header"><i class="fas fa-shopping-cart"></i>  Active Orders</h1> <hr>
+                    <div class="table-responsive">
+                      <table class="table">
+                            <!-- On rows -->
+                            <tr class="table-active">
+                                <td class="table-active">Order No</td>
+                                <td class="table-active">Date</td>
+                                <td class="table-active">Consumer Details</td>
+                                <td class="table-active">Transporter Name</td>
+                                <td class="table-active">Secretary Details</td>
+                                <td class="table-active">Order Details</td>
+                                
+                            </tr>
+                            
+                            <tr class="table-primary">
+                                <td class="table-primary">#001</td>
+                                <td class="table-primary">30.09.2020</td>
+                                <td class="table-primary">Aman Kuvera, 17MIS0175, Mens Hostel, 6362295480</td>
+                                <td class="table-primary">Shuttle Cab, VIT - 9123456789</td>
+                                <td class="table-primary">Veg Mess - H Block, 9876543219</td>
+                                <td class="table-active">4 kg Carrots, 8 kg Cabbage, 2 kg Beans</td>
+                            </tr>
+                            <tr class="table-secondary">
+                                <td class="table-secondary">...</td>
+                                <td class="table-secondary">...</td>
+                                <td class="table-secondary">...</td>
+                                <td class="table-secondary">...</td>
+                                <td class="table-secondary">...</td>
+                                <td class="table-active">More Info</td>
+                            </tr>
+                            <tr class="table-success">
+                                <td class="table-success">...</td>
+                                <td class="table-success">...</td>
+                                <td class="table-success">...</td>
+                                <td class="table-success">...</td>
+                                <td class="table-success">...</td>
+                                <td class="table-active">More Info</td>
+                            </tr>
+                            <tr class="table-danger">
+                                <td class="table-danger">...</td>
+                                <td class="table-danger">...</td>
+                                <td class="table-danger">...</td>
+                                <td class="table-danger">...</td>
+                                <td class="table-danger">...</td>
+                                <td class="table-active">More Info</td>
+                            </tr>
+                            <tr class="table-warning">
+                                <td class="table-warning">...</td>
+                                <td class="table-warning">...</td>
+                                <td class="table-warning">...</td>
+                                <td class="table-warning">...</td>
+                                <td class="table-warning">...</td>
+                                <td class="table-active">More Info</td>
+                            </tr>
+                            <tr class="table-info">
+                                <td class="table-info">...</td>
+                                <td class="table-info">...</td>
+                                <td class="table-info">...</td>
+                                <td class="table-info">...</td>
+                                <td class="table-info">...</td>
+                                <td class="table-active">More Info</td>
+                            </tr>
+                            <tr class="table-light">
+                                <td class="table-light">...</td>
+                                <td class="table-light">...</td>
+                                <td class="table-light">...</td>
+                                <td class="table-light">...</td>
+                                <td class="table-light">...</td>
+                                <td class="table-active">More Info</td>
+                            </tr>
+                            <tr class="table-dark">
+                                <td class="table-dark">...</td>
+                                <td class="table-dark">...</td>
+                                <td class="table-dark">...</td>
+                                <td class="table-dark">...</td>
+                                <td class="table-dark">...</td>
+                                <td class="table-active">More Info</td>
+                            </tr>
+                            
+                            <!-- On cells (`td` or `th`) -->                 
+                              
+                        </table>
+                    
+                </div>
+                </div>
+                
+                <div class="inventoryBody">
+                    <h1 class="page-header"><i class="fas fa-warehouse"></i>  Inventory and Stock</h1> <hr>
+                    
+<!--
+                    <form>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputEmail4">Email</label>
+                              <input type="email" class="form-control" id="inputEmail4">
+                            </div>
+                            <div class="form-group col-md-6">
+                              <label for="inputPassword4">Password</label>
+                              <input type="password" class="form-control" id="inputPassword4">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAddress">Address</label>
+                            <input type="text" class="form-control" id="inputAddress" placeholder="1234 Main St">
+                          </div>
+                          <div class="form-group">
+                            <label for="inputAddress2">Address 2</label>
+                            <input type="text" class="form-control" id="inputAddress2" placeholder="Apartment, studio, or floor">
+                          </div>
+                          <div class="form-row">
+                            <div class="form-group col-md-6">
+                              <label for="inputCity">City</label>
+                              <input type="text" class="form-control" id="inputCity">
+                            </div>
+                            <div class="form-group col-md-4">
+                              <label for="inputState">State</label>
+                              <select id="inputState" class="form-control">
+                                <option selected>Choose...</option>
+                                <option>...</option>
+                              </select>
+                            </div>
+                            <div class="form-group col-md-2">
+                              <label for="inputZip">Zip</label>
+                              <input type="text" class="form-control" id="inputZip">
+                            </div>
+                          </div>
+                          <div class="form-group">
+                            <div class="form-check">
+                              <input class="form-check-input" type="checkbox" id="gridCheck">
+                              <label class="form-check-label" for="gridCheck">
+                                Check me out
+                              </label>
+                            </div>
+                          </div>
+                          <button type="submit" class="btn btn-primary">Sign in</button>
+                    </form>
+-->
+                    
+                </div>
+                
+                <div class="transporterBody">
+                    <h1 class="page-header"><i class="fas fa-truck"></i>  Transporters</h1> <hr>
+                    
+                </div>
+                
+                <div class="transactionBody">
+                    <h1 class="page-header"><i class="fas fa-coins"></i>  Transactions</h1> <hr>
+                    
+                </div>
+                
+                <div class="statsBody">
+                    <h1 class="page-header"><i class="fas fa-chart-line"></i>  Stastics</h1> <hr>
+                <div class="row placeholders">
+                    <div class="col-6 col-sm-3 placeholder">
+                        <img src="image/graph.png" class="img-fluid" width="180px" height="180px" alt="">
+                        <h4> Label</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder">
+                        <img src="image/graph.png" class="img-fluid" width="180px" height="180px" alt="">
+                        <h4> Label</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder">
+                        <img src="image/graph.png" class="img-fluid" width="180px" height="180px" alt="">
+                        <h4> Label</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                    </div>
+                    <div class="col-6 col-sm-3 placeholder">
+                        <img src="image/graph.png" class="img-fluid" width="180px" height="180px" alt="">
+                        <h4> Label</h4>
+                        <p>Lorem ipsum dolor sit amet, consectetur.</p>
+                       
+                    </div>
+                    
+                </div>
+                <h2 class="sub-header">Detailed Result</h2>
+                <hr>
+                <div class="table-responsive">
+                    <table class="table table-striped">
+                        <thead>
+                            <tr>
+                                <th>ID#</th>
+                                <th>Detail 1#</th>
+                                <th>Detail 2#</th>
+                                <th>Detail 3#</th>
+                                <th>Detail 4#</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr>
+                            <tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr><tr>
+                                <td>234</td>
+                                <td>John</td>
+                                <td>Pentesting</td>
+                                <td>China</td>
+                                <td>90$</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+                    
+                </div>
+                
+                <div class="settingsBody">
+                    <h1 class="page-header"><i class="fas fa-user-cog"></i>  User Settings</h1> <hr>
+                    
+                </div>
+                
+                <div class="helpBody">
+                    <h1 class="page-header"><i class="fas fa-hands-helping"></i>  Help</h1> <hr>
+                    
+                </div>
+                
+                
+            </div>
+            </div>
+        </div>
+	</div>
+    <footer class="font-small bg-dark">
+
+  <!-- Copyright -->
+  <div class="footer-copyright text-center py-3">&copy; 2020 Copyright:
+    FarmEzee Inc. <a href="#" class="TnC"> Terms</a> &#8226; <a href="#" class="TnC"> Conditions</a>
+  </div>
+  <!-- Copyright -->
+    
+
+    </footer>
+
+
+	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+    <script>
+            $('#v-pills-dash-tab').click(function(){
+                if($('.dashboardBody').is(":hidden")){
+                    $('.dashboardBody').show()
+                    $('.activeOrdersBody').hide()
+                    $('.inventoryBody').hide()
+                    $('.transporterBody').hide()
+                    $('.transactionBody').hide()
+                    $('.statsBody').hide()
+                    $('.settingsBody').hide()
+                    $('.helpBody').hide()
+                }
+            })
+        
+        $('#v-pills-orders-tab').click(function(){
+                if($('.activeOrdersBody').is(":hidden")){
+                    $('.dashboardBody').hide()
+                    $('.activeOrdersBody').show()
+                    $('.inventoryBody').hide()
+                    $('.transporterBody').hide()
+                    $('.transactionBody').hide()
+                    $('.statsBody').hide()
+                    $('.settingsBody').hide()
+                    $('.helpBody').hide()
+                }
+            })
+        
+        $('#v-pills-stock-tab').click(function(){
+                if($('.inventoryBody').is(":hidden")){
+                    $('.dashboardBody').hide()
+                    $('.activeOrdersBody').hide()
+                    $('.inventoryBody').show()
+                    $('.transporterBody').hide()
+                    $('.transactionBody').hide()
+                    $('.statsBody').hide()
+                    $('.settingsBody').hide()
+                    $('.helpBody').hide()
+                }
+            })
+        
+        $('#v-pills-transport-tab').click(function(){
+                if($('.transporterBody').is(":hidden")){
+                    $('.dashboardBody').hide()
+                    $('.activeOrdersBody').hide()
+                    $('.inventoryBody').hide()
+                    $('.transporterBody').show()
+                    $('.transactionBody').hide()
+                    $('.statsBody').hide()
+                    $('.settingsBody').hide()
+                    $('.helpBody').hide()
+                }
+            })
+        
+        $('#v-pills-transaction-tab').click(function(){
+                if($('.transactionBody').is(":hidden")){
+                    $('.dashboardBody').hide()
+                    $('.activeOrdersBody').hide()
+                    $('.inventoryBody').hide()
+                    $('.transporterBody').hide()
+                    $('.transactionBody').show()
+                    $('.statsBody').hide()
+                    $('.settingsBody').hide()
+                    $('.helpBody').hide()
+                }
+            })
+        
+        $('#v-pills-stats-tab').click(function(){
+                if($('.statsBody').is(":hidden")){
+                    $('.dashboardBody').hide()
+                    $('.activeOrdersBody').hide()
+                    $('.inventoryBody').hide()
+                    $('.transporterBody').hide()
+                    $('.transactionBody').hide()
+                    $('.statsBody').show()
+                    $('.settingsBody').hide()
+                    $('.helpBody').hide()
+                }
+            })
+        
+       $('#v-pills-settings-tab').click(function(){
+                if($('.settingsBody').is(":hidden")){
+                    $('.dashboardBody').hide()
+                    $('.activeOrdersBody').hide()
+                    $('.inventoryBody').hide()
+                    $('.transporterBody').hide()
+                    $('.transactionBody').hide()
+                    $('.statsBody').hide()
+                    $('.settingsBody').show()
+                    $('.helpBody').hide()
+                }
+            })
+        
+        $('#v-pills-help-tab').click(function(){
+                if($('.helpBody').is(":hidden")){
+                    $('.dashboardBody').hide()
+                    $('.activeOrdersBody').hide()
+                    $('.inventoryBody').hide()
+                    $('.transporterBody').hide()
+                    $('.transactionBody').hide()
+                    $('.statsBody').hide()
+                    $('.settingsBody').hide()
+                    $('.helpBody').show()
+                }
+            })
+    
+    
+    </script>
+    
+    
+</body>
+
+</html>

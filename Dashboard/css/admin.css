@@ -1,0 +1,101 @@
+body{
+    font-family: 'Exo 2', sans-serif;
+}
+
+.navbar-dark .navbar-brand {
+    color: lightgray;
+}
+
+.flex-column{
+    margin-top: 1em
+}
+
+.sidebar{
+    border-right: solid 1px;
+    border-color: lightgray;
+    text-align: left;
+}
+
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: #fff;
+    background-color: #343a40;
+}
+
+
+.page-header{
+    padding: 10px 10px;
+ color:#343a40
+        
+}
+.main{
+    margin-top:15px
+}
+
+.placeholders{
+    margin-top: 10px;
+    margin-bottom: 30px;
+}
+
+.placeholder{
+    margin-bottom: 20px;
+    text-align: center;
+    
+}
+
+.placeholder img{
+    display:inline;
+    border-radius: 50%
+}
+
+footer{
+    color: lightgray;
+    text-align: center;   
+    font-size: 12px;  
+    width: 100%;
+    margin-top:23px
+}
+
+.TnC:hover{
+    text-decoration: none
+}
+
+.dashboardBody{
+    display:block
+}
+
+
+.activeOrdersBody{
+    display: none
+}
+
+
+.inventoryBody{
+    display: none
+}
+
+
+.transporterBody{
+    display: none
+}
+
+
+.transactionBody{
+    display: none
+}
+
+
+.statsBody{
+    display: none
+}
+
+.settingsBody{
+    display: none
+}
+
+.helpBody{
+    display: none
+}
+
+i{
+    margin-right: 8px
+}
