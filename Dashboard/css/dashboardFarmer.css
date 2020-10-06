@@ -38,7 +38,7 @@ body{
 .main{
     margin-top:15px;
     height: 100vh;
-    overflow-x:scroll;
+    overflow-y:scroll;
     scroll-behavior: smooth;
 }
 
@@ -129,4 +129,17 @@ i{
 
 .formBtn{
     text-align: center;
+}
+
+@media(max-width:576px){
+    body{
+        overflow-y:scroll;
+    }
+    .sidebar{
+        height: auto;
+    }
+    .main{
+        overflow-y: visible;
+    }
+    
 }
