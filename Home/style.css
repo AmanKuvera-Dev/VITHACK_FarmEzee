@@ -1,0 +1,108 @@
+html{
+    scroll-behavior: smooth;
+}
+
+body{
+    outline:none;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+
+::-webkit-scrollbar{
+    width:5px;
+}
+
+
+::-webkit-scrollbar-thumb {
+    background: rgba(0,67,105,0.8);
+    border-radius: 30px;
+
+}
+
+/*
+.navbar{
+     height: 80px;   
+}
+*/
+
+#myVideo {
+  position:relative;
+  min-width: 100%;
+  min-height: 70%;
+    opacity: 0.8
+}
+
+.content {
+  position: absolute;
+  bottom:0px;
+  background: rgba(255, 255, 255, 0.3);
+  color: #343a40!important;
+  width: 100%;
+  padding: 20px;
+    opacity: 1 !important;
+}
+
+.navbar-wrapper{
+    z-index: 100 !important;
+    position:absolute;
+    top:0;
+    width:100vw;;
+    height: 80px;
+}
+
+
+.navbar-wrapper.visible{
+    position:fixed;
+    width: 100vw;
+    animation: slide 1s;
+  animation-fill-mode: forwards;
+    
+}
+
+
+@keyframes slide{
+    from {top: -60px;}
+  to {top: 0px;}
+}
+
+.aboutUs{
+    text-align: center;
+    position: relative;
+    margin:80px;
+}
+
+.aboutUs .row .col-md-12 p{
+    margin-top:30px;
+}
+
+.navbar-collapse{
+    background-color: #343a40!important;
+    width:100%;
+    padding:10px;
+}
+
+.navbar-toggler, .navbar-dark .navbar-toggler{
+    outline:none;
+}
+
+@media(max-width:992px){
+    .navbar-toggler
+}
+
+.features{
+    text-align: center;
+    position: relative;
+    margin:80px;
+}
+
+.features .row .col-md-12 p{
+    margin-top:30px;
+}
+
+.features .row .col-md-4 h3{
+    margin-top:30px;
+}
+
+.featureSec{
+    margin-top: 30px;
+}
