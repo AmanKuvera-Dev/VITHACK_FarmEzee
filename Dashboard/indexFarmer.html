@@ -93,7 +93,7 @@
                                 <td class="table-active">Date</td>
                                 <td class="table-active">Consumer Details</td>
                                 <td class="table-active">Transporter Name</td>
-                                <td class="table-active">Secretary Details</td>
+                                <td class="table-active">Order Value</td>
                                 <td class="table-active">Order Details</td>
                                 
                             </tr>
@@ -240,10 +240,227 @@
                 <div class="transporterBody">
                     <h1 class="page-header"><i class="fas fa-truck"></i>  Transporters</h1> <hr>
                     
+                    <table class="table">
+                          <thead class="thead-dark">
+                            <tr>
+                              <th scope="col">#ID</th>
+                              <th scope="col">Name</th>
+                              <th scope="col">Contact</th>
+                              <th scope="col">Vehicle Details</th>
+                            </tr>
+                          </thead>
+                          <tbody>
+                            <tr>
+                              <th scope="row">1</th>
+                              <td>Mark</td>
+                              <td>Otto</td>
+                              <td>@mdo</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">2</th>
+                              <td>Jacob</td>
+                              <td>Thornton</td>
+                              <td>@fat</td>
+                            </tr>
+                            <tr>
+                              <th scope="row">3</th>
+                              <td>Larry</td>
+                              <td>the Bird</td>
+                              <td>@twitter</td>
+                            </tr>
+                          </tbody>
+                        </table>
+                        
+                    
                 </div>
                 
                 <div class="transactionBody">
-                    <h1 class="page-header"><i class="fas fa-coins"></i>  Transactions</h1> <hr>
+                    <h1 class="page-header"><i class="fas fa-coins"></i>  Transactions</h1>
+                    
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link active" id="history-tab" data-toggle="tab" href="#history" role="tab" aria-controls="home" aria-selected="true">History</a>
+                          </li>
+                          <li class="nav-item" role="presentation">
+                            <a class="nav-link" id="redeem-tab" data-toggle="tab" href="#redeem" role="tab" aria-controls="profile" aria-selected="false">Redeem</a>
+                          </li>
+                        </ul>
+                        <div class="tab-content" id="myTabContent">
+                          <div class="tab-pane fade show active" id="history" role="tabpanel" aria-labelledby="history-tab">
+                            <div class="transactionBal">
+                             <label for="currentBalance">Total Earnings Redeemed(frc) : </label>
+                             <input type="number" id="currBalanceR" value="" readonly>
+                             </div>
+                             
+                             <div class="transactionBal">
+                              <label for="currentBalance" >Value of Earnings Redeemed (local currency) : </label>
+                             <input type="number" id="currBalanceRL" value="" readonly>
+                              </div>
+                             
+                              <table class="table table-striped">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#ID</th>
+                                      <th scope="col">Date</th>
+                                      <th scope="col">Transaction Value (in frc)</th>
+                                      <th scope="col">Received from</th>
+                                      <th scope="col">Value when Redeemed</th>
+                                      <th scope="col">Redeem Status</th>
+                                      <th scope="col">Auto Redeem in (days)</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>10.10.2020</td>
+                                      <td>240</td>
+                                      <td>Donald Trump</td>
+                                      <td>900</td>
+                                      <td>Redeemed</td>
+                                      <td>current date - transaction date</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>10.10.2020</td>
+                                      <td>240</td>
+                                      <td>Donald Trump</td>
+                                      <td>900</td>
+                                      <td>Redeemed</td>
+                                      <td>current date - transaction date</td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>10.10.2020</td>
+                                      <td>240</td>
+                                      <td>Donald Trump</td>
+                                      <td>900</td>
+                                      <td>Redeemed</td>
+                                      <td>current date - transaction date</td>
+                                    </tr>
+                                  </tbody>
+                                </table>
+                                
+                          </div>
+                          <div class="tab-pane fade" id="redeem" role="tabpanel" aria-labelledby="redeem-tab">
+                              
+                              <div class="transactionBal">
+                             <label for="currentBalance">Total Earnings to be Redeemed (frc) : </label>
+                             <input type="number" id="currBalanceNR" value="" readonly>
+                             </div>
+                             
+                             <div class="transactionBal">
+                              <label for="currentBalance" >Value of Earnings (local currency) : </label>
+                             <input type="number" id="currBalanceNRL" value="" readonly>
+                              </div>
+                              
+                              <div class="transactionBal">
+                              <label for="currentBalance" >Value of 1 Farmico in local currency : </label>
+                             <input type="number" id="farmicoValue" value="" readonly>
+                              </div>
+                              
+                              <table class="table table-striped redeemTable table-responsive">
+                                  <thead>
+                                    <tr>
+                                      <th scope="col">#ID</th>
+                                      <th scope="col">Date</th>
+                                      <th scope="col">Transaction Value (in frc)</th>
+                                      <th scope="col">Received from</th>
+                                      <th scope="col">Value when Redeemed</th>
+                                      <th scope="col">Redeem Status</th>
+                                      <th scope="col">Auto Redeem in (days)</th>
+                                      <th scope="col">Redeem Now</th>
+                                    </tr>
+                                  </thead>
+                                  <tbody>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>10.10.2020</td>
+                                      <td>240</td>
+                                      <td>Donald Trump</td>
+                                      <td>900</td>
+                                      <td>Not Redeemed</td>
+                                      <td>current date - transaction date</td>
+                                      <td><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModalLong"> Redeem</button></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>10.10.2020</td>
+                                      <td>240</td>
+                                      <td>Donald Trump</td>
+                                      <td>900</td>
+                                      <td>Not Redeemed</td>
+                                      <td>current date - transaction date</td>
+                                      <td><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModalLong"> Redeem</button></td>
+                                    </tr>
+                                    <tr>
+                                      <th scope="row">1</th>
+                                      <td>10.10.2020</td>
+                                      <td>240</td>
+                                      <td>Donald Trump</td>
+                                      <td>900</td>
+                                      <td>Not Redeemed</td>
+                                      <td>current date - transaction date</td>
+                                      <td><button class="btn btn-success btn-sm" data-toggle="modal" data-target="#exampleModalLong"> Redeem</button></td>
+                                    </tr>
+                                  </tbody>
+                                  <!-- Button trigger modal -->
+                                        
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="exampleModalLong" tabindex="-1" role="dialog" aria-labelledby="exampleModalLongTitle" aria-hidden="true">
+                                          <div class="modal-dialog" role="document">
+                                            <div class="modal-content">
+                                              <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLongTitle">Convert Farmico Currency</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                  <span aria-hidden="true">&times;</span>
+                                                </button>
+                                              </div>
+                                              <div class="modal-body">
+                                                     
+                                                     <form>
+  <div class="form-group">
+    <label for="transConfDate">Date :</label>
+    <input type="date" class="form-control" id="transConfDate" aria-describedby="emailHelp" value=" dateValueFromTable" readonly>
+  </div>
+  <div class="form-group">
+    <label for="transConfValue">Transaction Value (in frc) :</label>
+    <input type="number" class="form-control" id="transConfValue" value=" ValueFromTable" readonly>
+  </div>  
+   <div class="form-group">
+    <label for="transConfReceive">Received from : </label>
+    <input type="text" class="form-control" id="transConfReceive" value=" payerValueFromTable" readonly>
+  </div>   
+   <div class="form-group">
+    <label for="transConfRValue">Value when Redeemed : </label>
+    <input type="text" class="form-control" id="transConfRValue" value=" ValueFromTable" readonly>
+  </div>   
+   <div class="form-group">
+    <label for="transConfAccNo">Account Number :  </label>
+    <input type="text" class="form-control" id="transConfAccNo" value=" accNumberFromUserDatabase" readonly>
+  </div>
+  <div class="form-group">
+    <label for="transPassVerify">Password :  </label>
+    <input type="password" class="form-control" id="transPassVerify" placeholder=" FarmEzee Account Password" >
+  </div>
+  <div class="form-check">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <label class="form-check-label" for="exampleCheck1">Check the box to confirm</label>
+  </div>
+  <button type="submit" class="btn btn-primary">Redeem Payment</button>
+</form>
+                                                     
+                                                      
+                                              </div>
+                                              <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cancel</button>
+                                              </div>
+                                            </div>
+                                          </div>
+                                        </div>
+                                </table>
+                              
+                          </div>
+                        </div>
                     
                 </div>
                 

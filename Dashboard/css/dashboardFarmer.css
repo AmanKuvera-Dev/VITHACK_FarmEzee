@@ -143,3 +143,11 @@ i{
     }
     
 }
+
+.transactionBal{
+    margin: 15px;
+}
+
+.redeemTable{
+    overflow-x:scroll !important;
+}
