@@ -420,30 +420,30 @@
                                                      <form>
   <div class="form-group">
     <label for="transConfDate">Date :</label>
-    <input type="date" class="form-control" id="transConfDate" aria-describedby="emailHelp" value=" dateValueFromTable" readonly>
+    <input type="date" class="form-control" id="transConfDate" aria-describedby="emailHelp" value=" dateValueFromTable" readonly required>
   </div>
   <div class="form-group">
     <label for="transConfValue">Transaction Value (in frc) :</label>
-    <input type="number" class="form-control" id="transConfValue" value=" ValueFromTable" readonly>
+    <input type="number" class="form-control" id="transConfValue" value=" ValueFromTable" readonly required>
   </div>  
    <div class="form-group">
     <label for="transConfReceive">Received from : </label>
-    <input type="text" class="form-control" id="transConfReceive" value=" payerValueFromTable" readonly>
+    <input type="text" class="form-control" id="transConfReceive" value=" payerValueFromTable" readonly required>
   </div>   
    <div class="form-group">
     <label for="transConfRValue">Value when Redeemed : </label>
-    <input type="text" class="form-control" id="transConfRValue" value=" ValueFromTable" readonly>
+    <input type="text" class="form-control" id="transConfRValue" value=" ValueFromTable" readonly required>
   </div>   
    <div class="form-group">
     <label for="transConfAccNo">Account Number :  </label>
-    <input type="text" class="form-control" id="transConfAccNo" value=" accNumberFromUserDatabase" readonly>
+    <input type="text" class="form-control" id="transConfAccNo" value=" accNumberFromUserDatabase" readonly required>
   </div>
   <div class="form-group">
     <label for="transPassVerify">Password :  </label>
-    <input type="password" class="form-control" id="transPassVerify" placeholder=" FarmEzee Account Password" >
+    <input type="password" class="form-control" id="transPassVerify" placeholder=" FarmEzee Account Password" required>
   </div>
   <div class="form-check">
-    <input type="checkbox" class="form-check-input" id="exampleCheck1">
+    <input type="checkbox" class="form-check-input" id="exampleCheck1" required>
     <label class="form-check-label" for="exampleCheck1">Check the box to confirm</label>
   </div>
   <button type="submit" class="btn btn-primary">Redeem Payment</button>
