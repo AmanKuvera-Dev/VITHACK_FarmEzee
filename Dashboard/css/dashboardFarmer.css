@@ -151,3 +151,22 @@ i{
 .redeemTable{
     overflow-x:scroll !important;
 }
+
+#usernameTab{
+    text-align: center;
+    margin-top: 20px;
+}
+
+#usernameTab i{
+    border:2px solid gray;
+    border-radius: 50%;
+    padding:15px;
+}
+
+#totalValueSec{
+    float:right;
+}
+
+#totalValueButton{
+    float:right;
+}
