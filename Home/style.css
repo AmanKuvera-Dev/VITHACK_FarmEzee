@@ -35,7 +35,7 @@ body{
   position:relative;
   min-width: 100%;
   min-height: 70%;
-    opacity: 0.8
+    opacity: 0.6
 }
 
 .content {
@@ -94,6 +94,9 @@ nav, .bg-dark{
     color: #2c7873;
     font-weight: 600
 }
+
+
+
 
 .navbar-collapse{
     background-color: #004445!important;
@@ -250,4 +253,60 @@ nav, .bg-dark{
 
 .fullOtherFeat{
     padding:20px;
+}
+
+
+.technology .row .col-md-12 h2{
+    color: #2c7873;
+    font-weight: 600
+}
+
+.techParts{
+    text-align: center;
+}
+
+.technology {
+    text-align: center;
+    position: relative;
+    padding: 100px 80px 80px 80px;
+}
+
+.techImgs{
+    width:150px;
+    height: 150px;
+    margin-top: 30px;
+}
+
+.technology .row .col-md-12 h5{
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.techParts .col-md-3 h5{
+    margin-top: 25px;
+    font-weight: 600
+}
+
+.mongo{
+    background-color: rgb(239,240,242);
+    border-radius: 50%;
+    padding: 15px;
+}
+.node{
+    background-color: rgb(239,240,242);
+    border-radius: 50%;
+    border:2px solid rgb(239,240,242);
+    padding: 10px 0px 10px 10px;
+}
+
+.htmlLogo{
+    background-color: rgb(239,240,242);
+    border-radius: 50%;
+    padding: 0px;
+}
+
+.mongo1{
+    background-color: rgb(239,240,242);
+    border-radius: 50%;
+    padding: 25px;
 }
