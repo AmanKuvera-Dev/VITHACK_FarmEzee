@@ -92,7 +92,8 @@ nav, .bg-dark{
 }
 .aboutUs .row .col-md-12 h2, .features .row .col-md-12 h2{
     color: #2c7873;
-    font-weight: 600
+    font-weight: 600;
+    font-size: 40px;
 }
 
 
@@ -258,7 +259,8 @@ nav, .bg-dark{
 
 .technology .row .col-md-12 h2{
     color: #2c7873;
-    font-weight: 600
+    font-weight: 600;
+    font-size: 40px;
 }
 
 .techParts{
@@ -277,11 +279,12 @@ nav, .bg-dark{
     margin-top: 30px;
 }
 
-.technology .row .col-md-12 h5{
+.technology .row .col-md-12 h4{
     margin-top: 30px;
     font-weight: 600;
 }
 
+/*
 .techParts .col-md-3 h5{
     margin-top: 25px;
     font-weight: 600
@@ -309,4 +312,22 @@ nav, .bg-dark{
     background-color: rgb(239,240,242);
     border-radius: 50%;
     padding: 25px;
+}
+*/
+
+.technology .row .col-md-12 h6{
+    margin-top: 30px;
+    font-weight: 600;
+}
+
+.technology .row .col-md-12 a{
+    margin-top: 20px;
+}
+
+.footer-text{
+    text-align: center;
+}
+footer{
+    background-color: #d9e4dd;
+    padding: 10px 0px 2px 0px;;
 }
