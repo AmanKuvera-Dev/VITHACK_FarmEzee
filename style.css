@@ -144,6 +144,7 @@ nav, .bg-dark{
     border-radius: 40px;
     padding: 20px;
     background-image: linear-gradient(to top, #6fb98f, #2c7873, white);
+    min-height: 500px !important;
 }
 
 @keyframes slideFromLeft{
